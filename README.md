@@ -26,15 +26,15 @@ In the project directory, you can run:
 `npm start`
 
 ## API routes to CRUD (Create, Read, Update, and Delete) 
-`post` Create a new Product https://quinn-back-end.herokuapp.com/produts/
+`post` Create a new Product https://quinn-server.herokuapp.com/products/
 
-`get` Read all Products https://quinn-back-end.herokuapp.com/produts/
+`get` Read all Products https://quinn-server.herokuapp.com/products/
 
-`get` Read a single Product https://quinn-back-end.herokuapp.com/produts/:id
+`get` Read a single Product https://quinn-server.herokuapp.com/products/:id
 
-`update` Update a Products https://quinn-back-end.herokuapp.com/produts/:id
+`update` Update a Products https://quinn-server.herokuapp.com/products:id
 
-`delete` Delete a single Product https://quinn-back-end.herokuapp.com/produts/:id
+`delete` Delete a single Product https://quinn-server.herokuapp.com/products/:id
 
 
 
