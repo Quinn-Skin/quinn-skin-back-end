@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon start.js",
     "db:init": "dropdb --if-exist quinn_db && createdb quinn_db",
-    "db:seed": "nodemon seed.js"
+    "db:seed": "node seed.js"
   },
   "keywords": [],
   "author": "",
