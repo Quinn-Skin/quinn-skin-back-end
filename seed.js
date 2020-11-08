@@ -5,7 +5,7 @@ const faker = require('faker');
 
 
 // Seed Products
-for (let i = 0, j = 1; i < data.length; j++, i++) {
+for (let i = 0, j = 1; i < data.length - 200; j++, i++) {
     Products.create({
         title: data[i].title,
         description: data[i].description,
@@ -16,7 +16,7 @@ for (let i = 0, j = 1; i < data.length; j++, i++) {
 
 
 // Seed Reviews
-for (let i = 0; i < data.length; i++) {
+for (let i = 0; i < data.length - 200; i++) {
     for (let j = 0; j < 8; j++) {
         Reviews.create({
             fullName: faker.name.findName(),
