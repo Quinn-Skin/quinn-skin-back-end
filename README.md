@@ -41,11 +41,11 @@ In the project directory, you can run:
 
 `get` Read all Reviews https://quinn-server.herokuapp.com/reviews/
 
-`get` Read all Reviews https://quinn-server.herokuapp.com/reviews/product/:id/
+`get` Read all Product Reviews https://quinn-server.herokuapp.com/reviews/product/:id/
 
 `get` Read a single Review https://quinn-server.herokuapp.com/reviews/:id
 
-`update` Update a  single Review https://quinn-server.herokuapp.com/products:id
+`update` Update a  single Review https://quinn-server.herokuapp.com/reviews/:id
 
-`delete` Delete a single Review https://quinn-server.herokuapp.com/products/:id
+`delete` Delete a single Review https://quinn-server.herokuapp.com/reviews/:id
 
