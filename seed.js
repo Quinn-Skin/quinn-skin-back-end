@@ -17,7 +17,7 @@ for (let i = 0, j = 1; i < data.length - 200; j++, i++) {
 
 // Seed Reviews
 for (let i = 0; i < data.length - 200; i++) {
-    for (let j = 0; j < 8; j++) {
+    for (let j = 0; j < 3; j++) {
         Reviews.create({
             fullName: faker.name.findName(),
             review: faker.lorem.sentence(9),
