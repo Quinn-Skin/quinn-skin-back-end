@@ -19,6 +19,7 @@ db.authenticate().then(() => {
 app.use(cors())
 app.use(bodyParser.json())
 app.use("/products", require("./routes/Produts"))
+app.use("/reviews", require("./routes/Reviews"))
 
 // Quinn routes
 app.get("/",  (req, res) => {

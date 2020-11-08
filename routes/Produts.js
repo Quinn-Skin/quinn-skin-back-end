@@ -5,7 +5,8 @@ const Joi = require('joi')
 const ProdutsSchema = Joi.object({
     title: Joi.string().required(),
     price: Joi.number().required(),
-    description: Joi.string().required()
+    description: Joi.string().required(),
+    url: Joi.string().required()
 })
 
 
@@ -42,7 +43,6 @@ router.post("/", async (req, res) => {
     }).catch((err) => {
         res.send(err)
     })
-
 })
 
 
