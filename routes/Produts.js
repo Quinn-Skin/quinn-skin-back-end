@@ -48,7 +48,7 @@ router.post("/", async (req, res) => {
 
 router.put("/:id", async (req, res) => {
     await ProdutsSchema.validateAsync(req.body).then(async () => {
-        await Produts.findOne({ where: { id: req.params.id } }).then(async (Produt) => {
+        await Produts.findOne({ where: { product_id: req.params.id } }).then(async (Produt) => {
             await Produt.update(req.body).then((Produt) => {
                 res.json({
                     status: 200,
