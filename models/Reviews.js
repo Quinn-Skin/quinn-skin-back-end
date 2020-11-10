@@ -1,6 +1,5 @@
 const Sequelize = require("sequelize")
 const db = require("../db")
-const router = require("../routes/Reviews")
 const Products = require("./Produts")
 
 const Reviews = db.define("reviews", {
@@ -13,9 +12,6 @@ const Reviews = db.define("reviews", {
         allowNull: false
     }
 })
-
-
-router
 
 Reviews.belongsTo(Products)
 module.exports = Reviews

@@ -1,7 +1,5 @@
-const Products = require("./models/Produts")
-const Reviews = require("./models/Reviews")
-const data = require("./datasets/data")
-const faker = require('faker');
+const Products = require("../models/Produts")
+const data = require("../datasets/data")
 
 
 // Seed Products
@@ -33,15 +31,4 @@ for (let i = 0; i < data.length - 200; i++) {
             "and": data[i].and
         }
     )
-}
-
-// Seed Reviews
-for (let i = 0; i < data.length; i++) {
-    for (let j = 0; j < 3; j++) {
-        Reviews.create({
-            fullName: faker.name.findName(),
-            review: faker.lorem.sentence(9),
-            productId: i
-        })
-    }
 }
