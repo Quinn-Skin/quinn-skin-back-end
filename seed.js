@@ -3,25 +3,47 @@ const Reviews = require("./models/Reviews")
 const data = require("./data")
 const faker = require('faker');
 
+// console.log(data.length);
 
 // Seed Products
-for (let i = 0, j = 1; i < data.length - 200; j++, i++) {
-    Products.create({
-        title: data[i].title,
-        description: data[i].description,
-        url: data[i].image ? data[i].image.slice(1, -1).split(",")[0].slice(1, -8) + "500_.jpg" : 'https://images-na.ssl-images-amazon.com/images/I/21BJjd-RsvL._SS500_.jpg',
-        price: data[i].price || 25.99
-    })
-}
-
-
-// Seed Reviews
 for (let i = 0; i < data.length - 200; i++) {
-    for (let j = 0; j < 3; j++) {
-        Reviews.create({
-            fullName: faker.name.findName(),
-            review: faker.lorem.sentence(9),
-            productId: i
-        })
-    }
+    Products.create(
+        {
+            "product_id": data[i].product_id,
+            "label": data[i].Label,
+            "url": data[i].URL,
+            "brand_name": data[i].brand_name,
+            "product_name": data[i].product_name,
+            "description": data[i].description,
+            "price": data[i].price,
+            "score": data[i].score,
+            "skin_concern": data[i].skin_concern,
+            "ingredients": data[i].ingredients,
+            "image_url": data[i].image_url,
+            "coiled": data[i].Coiled,
+            "coily": data[i].Coily,
+            "combination": data[i].Combination,
+            "curly": data[i].Curly,
+            "dry": data[i].Dry,
+            "normal": data[i].Normal,
+            "oily": data[i].Oily,
+            "sensitive": data[i].Sensitive,
+            "straight": data[i].Straight,
+            "tightly": data[i].Tightly,
+            "wavy": data[i].Wavy,
+            "and": data[i].and
+        }
+    )
 }
+
+
+// // Seed Reviews
+// for (let i = 0; i < data.length - 200; i++) {
+//     for (let j = 0; j < 3; j++) {
+//         Reviews.create({
+//             fullName: faker.name.findName(),
+//             review: faker.lorem.sentence(9),
+//             productId: i
+//         })
+//     }
+// }

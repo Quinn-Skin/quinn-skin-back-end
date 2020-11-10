@@ -8,9 +8,9 @@ if (production) {
 
 } else {
     db = new Sequelize({
-        database: process.env.DATABASE,
-        username: process.env.USERNAME,
-        password: process.env.PASSWORD,
+        database: "quinn_db",
+        username: "postgres",
+        password: "Alicia01",
         dialect: "postgres"
     })
 }
