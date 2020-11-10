@@ -4,7 +4,7 @@ In order to see Json format in the browser please install the [Json View](https:
 
 ## How to run it.
 
-First clone this repository into your local machine: `` https://github.com/Quinn-Skin/quinn-skin-back-end.git``
+First clone this repository into your local machine: ``git clone https://github.com/Quinn-Skin/quinn-skin-back-end.git``
 
 You will need to update the `.env` file with your credentials: 
 
