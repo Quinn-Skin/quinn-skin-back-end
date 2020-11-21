@@ -16,7 +16,7 @@ for (let i = 0; i < data.length - 200; i++) {
             "score": data[i].score,
             "skin_concern": data[i].skin_concern,
             "ingredients": data[i].ingredients,
-            "image_url": data[i].image_url,
+            "image_url": data[i].image_url.slice(0, -2) + "400",
             "coiled": data[i].Coiled,
             "coily": data[i].Coily,
             "combination": data[i].Combination,
@@ -31,4 +31,5 @@ for (let i = 0; i < data.length - 200; i++) {
             "and": data[i].and
         }
     )
+    // console.log(data[i].image_url.slice(0, -2) + "400");
 }
